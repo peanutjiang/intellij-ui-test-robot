@@ -24,8 +24,6 @@ public class SayHelloJavaTest {
     }
 
     @Test
-    @Disabled
-    @Video
     void checkSayHello(final RemoteRobot remoteRobot) {
         final WelcomeFrame welcomeFrame = remoteRobot.find(WelcomeFrame.class, Duration.ofSeconds(10));
         assert (welcomeFrame.hasText(startsWith("IntelliJ IDEA")));
